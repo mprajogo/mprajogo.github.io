@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+
+}
+
+.row {
+    max-width: 1000px;
+    display:flex;
+    flex-direction: column; 
+    margin: auto;
+  }
+  
+h1{
+  font-family: Garamond, serif; 
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+h3{
+  font-family: prenton, sans-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 1.5rem;
+}
+
+#header{
+  padding: 200px 30px;
+  width: 100%;
+
+}
+
+.content{
+    background-color: rgb(47, 83, 44);
+    padding: 30px;
+    width: 100%;
+
+  }
