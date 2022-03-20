@@ -3,80 +3,112 @@
     margin: 0;
 }
 
+body{
+  background-color: beige;
+}
+
 .wrapper{
   margin: auto;
   display:flex;
   flex-direction: column;
-
+  max-width: 1000px;
+  margin-bottom: 50px;
 }
 
 .row {
-    max-width: 1000px;
+  -webkit-box-sizing: border-box; 
     display:flex;
-    flex-direction: column; 
+    flex-direction: row; 
     margin: auto;
   }
   
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.column-project{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 h1{
   font-family: Garamond, serif; 
   font-weight: 100;
   font-size: 4rem;
+  color: rgb(47, 83, 44);
 }
 
 h2{
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.3em;
+  font-family: Garamond, serif;
+  font-weight: 500;
+  font-style: light;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+h3{
   color: rgb(47, 83, 44);
   font-family: Garamond, serif; 
   font-weight: 400;
   font-size: 3rem;
 }
 
-h3{
+h4{
+  color: rgb(47, 83, 44);
+  letter-spacing: 0.1em;
   font-family: prenton, sans-serif;
-  font-weight: 300;
-  font-style: light;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 1rem;
 }
 
 p{
   font-family: prenton, sans-serif;
   font-weight: 300;
   font-style: light;
-  font-size: 1.2rem;
+  font-size: 1.2em;
+  color: rgba(95, 86, 86, 0.795);
 }
 
+#head{
+  font-family: prenton, sans-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 1.8rem;
+  color: black;
+}
 #header{
-  padding: 200px 30px;
+  padding: 150px 30px;
+  -webkit-box-sizing: border-box; 
   width: 100%;
-
+  height: 100vh;
 }
 
-.projects{
-  border: 2px solid  rgb(47, 83, 44);
-    background-color: rgb(47, 83, 44);
-    padding: 30px;
-    width: 100%;
-
+.row-projects{
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  margin-bottom: 60px;
   }
 
 .case-study{
-  border: 2px solid  rgb(47, 83, 44);
-  padding: 30px;
+  color: #f5f5dc;
+  border: 2px solid  #2f532c;
   width: 100%;
   margin-bottom: 30px;
+  max-height: 300px;
 }
 
-.case-study:hover{
-  border: 2px solid  rgb(47, 83, 44);
-  background-color: rgb(47, 83, 44);
-  padding: 30px;
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-
-button{
-  font-family: Garamond, serif; 
-  font-weight: bold;
+.case-study-btn{
+  letter-spacing: 0.1em;
+  font-family: prenton, sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 0.4rem;
   width: fit-content;
   background-color: rgb(47, 83, 44);
   border: none;
@@ -88,4 +120,135 @@ button{
   display: inline-block;
   font-size: 16px;
   
+}
+
+.description{
+  width: 50%;
+  padding: 30px;
+
+}
+
+.photo{
+width: 50%;
+background-color: rgb(47, 83, 44);
+}
+
+.case-study-img{
+  max-height: 250px;
+  margin: auto;}
+
+.card{
+  box-shadow: 10px 10px rgb(47, 83, 44);
+    border-radius: 10px 10px;
+    border: 2px solid rgb(47, 83, 44);
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.card-img-top{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid rgb(47, 83, 44);
+  
+}
+
+.card-body{
+  padding: 20px;
+}
+
+.btn-view{
+  margin-top: 20px;
+  margin-right: 10px;
+  letter-spacing: 0.2em;
+  font-family: prenton, sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 0.4rem;
+  width: fit-content;
+  background-color: rgb(47, 83, 44);
+  border: none;
+  
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.btn-source{
+  margin-top: 20px;
+  letter-spacing: 0.2em;
+  font-family: prenton, sans-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 0.4rem;
+  width: fit-content;
+  border: 1px solid rgb(47, 83, 44);
+  
+  color: rgb(47, 83, 44);;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.stretch{
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0
+}
+
+.project-title{
+  color: rgb(47, 83, 44);
+  font-family: Garamond, serif; 
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+hr{
+  height: 0.5px;
+  background-color:  rgb(47, 83, 44);
+  border: none;
+}
+
+ul, .links{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li, .link-image{
+  display: inline;
+  width: 35px;
+  padding-right: 5px;
+}
+
+
+.tooltip .tooltiptext{
+  font-family: prenton, sans-serif;
+  font-weight: 200;
+  font-style: bold;
+  font-size: 1rem;
+  
+  visibility: hidden;
+  background-color: rgb(47, 83, 44);
+  color: #fff;
+  text-align: center;
+  padding: 10px 5px;
+  border-radius: 6px;
+ 
+
+  top: 500%;
+  left: 50%;
+  margin-left: -60px; 
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.link-list:hover .tooltiptext {
+  visibility: visible;
 }
