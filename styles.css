@@ -82,7 +82,7 @@ p{
   color: black;
 }
 #header{
-  padding: 150px 30px;
+  padding: 300px 30px;
   -webkit-box-sizing: border-box; 
   width: 100%;
   height: 100vh;
@@ -224,7 +224,7 @@ ul, .links{
 
 li, .link-image{
   display: inline;
-  width: 35px;
+  width: 45px;
   padding-right: 5px;
 }
 
@@ -251,4 +251,26 @@ li, .link-image{
 /* Show the tooltip text when you mouse over the tooltip container */
 .link-list:hover .tooltiptext {
   visibility: visible;
+}
+
+#view-work{
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  font-family: prenton, san-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 2rem;
+  width: 100%;
+  align-items: center;
+  
+  color: beige;
+  background-color: rgb(47, 83, 44);
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  
+  position: absolute;
+  bottom: 0;
+
 }
