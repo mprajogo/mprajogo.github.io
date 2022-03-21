@@ -161,6 +161,7 @@ background-color: rgb(47, 83, 44);
 .card-text{
   text-align: left;
 }
+
 .btn-view{
   margin-top: 20px;
   margin-right: 10px;
@@ -251,7 +252,6 @@ li, .link-image{
   margin-left: -60px; 
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .link-list:hover .tooltiptext {
   visibility: visible;
 }
@@ -275,7 +275,6 @@ li, .link-image{
   
   position: absolute;
   bottom: 0;
-
 }
 
 #view-work:hover{
@@ -296,5 +295,4 @@ li, .link-image{
   
   position: absolute;
   bottom: 0;
-
 }
