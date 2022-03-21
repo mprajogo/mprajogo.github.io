@@ -158,6 +158,9 @@ background-color: rgb(47, 83, 44);
   padding: 20px;
 }
 
+.card-text{
+  text-align: left;
+}
 .btn-view{
   margin-top: 20px;
   margin-right: 10px;
@@ -268,6 +271,27 @@ li, .link-image{
   padding: 20px 10px;
   text-align: center;
   text-decoration: none;
+  display: block;
+  
+  position: absolute;
+  bottom: 0;
+
+}
+
+#view-work:hover{
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  font-family: prenton, san-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 2rem;
+  width: 100%;
+  align-items: center;
+  
+  color: beige;
+  background-color: rgb(47, 83, 44);
+  padding: 20px 10px;
+  text-align: center;
   display: block;
   
   position: absolute;
