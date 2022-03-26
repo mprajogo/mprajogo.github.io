@@ -5,16 +5,24 @@
 
 body{
   background-color: beige;
+  max-width:100%; 
 }
 
 .wrapper{
   margin: auto;
   display:flex;
   flex-direction: column;
+  gap: 50px;
+  row-gap: 40px;
   max-width: 1000px;
   margin-bottom: 50px;
+  
 }
 
+.container{
+  display: flex;
+  flex-direction: row;
+}
 .row {
   -webkit-box-sizing: border-box; 
     display:flex;
@@ -47,8 +55,8 @@ h2{
   font-style: light;
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 h3{
   color: rgb(47, 83, 44);
@@ -74,7 +82,7 @@ p{
   color: rgba(95, 86, 86, 0.795);
 }
 
-#head{
+.subline{
   font-family: prenton, sans-serif;
   font-weight: 300;
   font-style: light;
@@ -82,17 +90,19 @@ p{
   color: black;
 }
 #header{
-  padding: 300px 30px;
+  padding: 30vh 30px 20vh 30px;
   -webkit-box-sizing: border-box; 
   width: 100%;
   height: 100vh;
 }
 
 .row-projects{
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
   margin-bottom: 60px;
+  flex-wrap: wrap;
+
   }
 
 .case-study{
@@ -100,7 +110,7 @@ p{
   border: 2px solid  #2f532c;
   width: 100%;
   margin-bottom: 30px;
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .case-study-btn{
@@ -142,9 +152,8 @@ background-color: rgb(47, 83, 44);
     border-radius: 10px 10px;
     border: 2px solid rgb(47, 83, 44);
     vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
+  margin-bottom: 30px;
+
 }
 
 .card-img-top{
@@ -256,6 +265,49 @@ li, .link-image{
   visibility: visible;
 }
 
+.banner{
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  font-family: prenton, san-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 2rem;
+  width: 100vw;
+  max-width:100%; 
+  align-items: center;
+  
+  color: beige;
+  background-color: rgb(47, 83, 44);
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  
+  position: fixed;
+  bottom: 0;
+}
+
+.banner:hover{
+  margin-top: 20px;
+  letter-spacing: 0.5em;
+  font-family: prenton, san-serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 2rem;
+  width: 100%;
+  align-items: center;
+  
+  color: beige;
+  background-color: rgb(47, 83, 44);
+  padding: 20px 10px;
+  text-align: center;
+  display: block;
+  
+  position: fixed;
+  bottom: 0;
+  max-width: 100%; 
+}
+
 #view-work{
   margin-top: 20px;
   letter-spacing: 0.5em;
@@ -263,7 +315,8 @@ li, .link-image{
   font-weight: 300;
   font-style: light;
   font-size: 2rem;
-  width: 100%;
+  width: 100vw;
+  max-width:100%; 
   align-items: center;
   
   color: beige;
@@ -295,4 +348,132 @@ li, .link-image{
   
   position: absolute;
   bottom: 0;
+  max-width: 100%; 
+}
+
+
+@media screen and (max-width: 700px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .banner{
+    margin-top: 20px;
+    letter-spacing: 0.5em;
+    font-family: prenton, san-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 1rem;
+    width: 100vw;
+    max-width:100%; 
+    align-items: center;
+    
+    color: beige;
+    background-color: rgb(47, 83, 44);
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    
+    position: fixed;
+    bottom: 0;
+  }
+  .banner:hover{
+    margin-top: 20px;
+    letter-spacing: 0.5em;
+    font-family: prenton, san-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 1rem;
+    width: 100vw;
+    max-width:100%; 
+    align-items: center;
+    
+    color: beige;
+    background-color: rgb(47, 83, 44);
+    padding: 20px 10px;
+    text-align: center;
+    display: block;
+    
+    position: fixed;
+    bottom: 0;
+  }
+
+  #view-work{
+    margin-top: 20px;
+    letter-spacing: 0.5em;
+    font-family: prenton, san-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 1rem;
+    width: 100vw;
+    max-width:100%; 
+    align-items: center;
+    
+    color: beige;
+    background-color: rgb(47, 83, 44);
+    padding: 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    
+    position: absolute;
+    bottom: 0;
+  }
+  #view-work:hover{
+    margin-top: 20px;
+    letter-spacing: 0.5em;
+    font-family: prenton, san-serif;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 1rem;
+    width: 100vw;
+    max-width:100%; 
+    align-items: center;
+    
+    color: beige;
+    background-color: rgb(47, 83, 44);
+    padding: 20px 10px;
+    text-align: center;
+    display: block;
+    
+    position: absolute;
+    bottom: 0;
+  }
+
+  .case-study-left{
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    height: auto;
+    flex-wrap: wrap; 
+    border-bottom: 1px solid rgb(47, 83, 44);; }
+
+  .case-study-description{
+    width: 100%;
+  }
+}
+
+.case-study-left{
+  width:30%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px ;
+  border-right: 1px solid rgb(47, 83, 44);
+}
+
+.case-study-description{
+  padding: 30px;
+}
+
+#case-study-photo{
+  width: 300px;
 }
