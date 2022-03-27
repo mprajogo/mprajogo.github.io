@@ -49,11 +49,11 @@ h1{
 
 h2{
   color: rgb(0, 0, 0);
-  letter-spacing: 0.3em;
+  letter-spacing: 0.4em;
   font-family: Garamond, serif;
-  font-weight: 500;
+  font-weight: 510;
   font-style: light;
-  font-size: 3rem;
+  font-size: 3.2rem;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -90,7 +90,7 @@ p{
   color: black;
 }
 #header{
-  padding: 30vh 30px 20vh 30px;
+  padding: 25vh 30px 20vh 30px;
   -webkit-box-sizing: border-box; 
   width: 100%;
   height: 100vh;
@@ -109,7 +109,7 @@ p{
   color: #f5f5dc;
   border: 2px solid  #2f532c;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   max-height: 500px;
 }
 
@@ -451,10 +451,15 @@ li, .link-image{
     text-align: center;
     height: auto;
     flex-wrap: wrap; 
-    border-bottom: 1px solid rgb(47, 83, 44);; }
+    border-bottom: 1px solid rgb(47, 83, 44); }
 
   .case-study-description{
     width: 100%;
+  }
+
+  .case-study-card{
+    position: static;
+    margin: 0;
   }
 }
 
@@ -467,13 +472,107 @@ li, .link-image{
   text-align: center;
   padding-left: 30px;
   padding-right: 30px ;
-  border-right: 1px solid rgb(47, 83, 44);
+  
 }
 
 .case-study-description{
-  padding: 30px;
+  padding: 50px;
+  max-width: 70%;
+  border-left: 1.5px solid rgb(47, 83, 44);
 }
 
 #case-study-photo{
   width: 300px;
+
+}
+
+.case-study-card{
+  position: fixed;
+  margin: 30px;
+}
+
+.black{
+  color: black;
+  
+}
+
+.underline{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: rgb(47, 83, 44);
+  text-underline-offset: 7px;
+  text-decoration-thickness: 2px;
+  padding-bottom: 15px;
+  color: black;
+}
+
+.text{
+  padding-bottom: 30px;
+}
+
+.description-image{
+  max-width: 50%;
+  box-shadow: 10px 10px rgb(47, 83, 44);
+  border-radius: 10px 10px;
+  border: 2px solid rgb(47, 83, 44);  
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+  
+
+
+  
+  .header {
+    font-family: prenton, sans-serif;
+    width: 100%;
+    color: beige;
+    background-color: rgb(47, 83, 44);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+  }
+  
+  .link {
+    display: inline-block;
+    /* padding: 15px 0; */
+    margin: 0px 60px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  font-family: prenton, san-serif;
+  font-weight: 100;
+  font-style: light;
+  font-size: 2rem;
+  color: beige;
+    
+ 
+  }
+
+.link:hover{
+  display: inline-block;
+  /* padding: 15px 0; */
+  margin: 0px 60px;
+  position: relative;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+font-family: prenton, san-serif;
+font-weight: 100;
+font-style: light;
+font-size: 2rem;
+color: beige;
+
+text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: beige;
+  text-underline-offset: 7px;
+  text-decoration-thickness: 2px;
+
 }

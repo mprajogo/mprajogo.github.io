@@ -1,4 +1,4 @@
-document.querySelectorAll('#view-work').forEach(anchor => {
+document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
