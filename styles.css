@@ -44,6 +44,13 @@ body{
 h1{
   font-family: Garamond, serif; 
   font-weight: 100;
+  font-size: 2.5rem;
+  color: rgb(47, 83, 44);
+}
+
+#intro{
+  font-family: Garamond, serif; 
+  font-weight: 100;
   font-size: 4rem;
   color: rgb(47, 83, 44);
 }
@@ -63,7 +70,7 @@ h3{
   color: rgb(47, 83, 44);
   font-family: Garamond, serif; 
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4{
@@ -110,8 +117,7 @@ p{
   color: #f5f5dc;
   border: 2px solid  #2f532c;
   width: 100%;
-  margin-bottom: 10px;
-  max-height: 500px;
+  min-height: 200px;
 }
 
 .case-study-btn{
@@ -134,19 +140,25 @@ p{
 }
 
 .description{
-  width: 50%;
+  max-width: 70%;
   padding: 30px;
+  border-left:  2px solid rgb(47, 83, 44);
+
 
 }
 
 .photo{
-width: 50%;
-background-color: rgb(47, 83, 44);
+width: 30%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
 }
 
 .case-study-img{
-  max-height: 250px;
-  margin: auto;}
+  max-height: 100%;
+}
 
 .card{
   box-shadow: 10px 10px rgb(47, 83, 44);
@@ -163,6 +175,7 @@ background-color: rgb(47, 83, 44);
     border: 2px solid rgb(47, 83, 44);
     vertical-align: top;
   margin-bottom: 30px;
+  text-align: center;
 
 
 }
@@ -171,6 +184,7 @@ background-color: rgb(47, 83, 44);
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   border-bottom: 2px solid rgb(47, 83, 44);
+  background-color: #2f532c;
   
 }
 
@@ -189,7 +203,7 @@ p.card-work-body{
 }
 .work-title{
   color: rgb(47, 83, 44);
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   
 }
 
@@ -211,8 +225,9 @@ p.card-work-body{
   width: fit-content;
   border: 2px solid beige;
   
+  background-color: rgb(47, 83, 44);;
   color: beige;
-  padding: 5px 10px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -326,7 +341,7 @@ li, .link-image{
   
   color: beige;
   background-color: rgb(47, 83, 44);
-  padding: 20px 10px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -347,7 +362,7 @@ li, .link-image{
   
   color: beige;
   background-color: rgb(47, 83, 44);
-  padding: 20px 10px;
+  padding: 10px 10px;
   text-align: center;
   display: block;
   
@@ -401,6 +416,12 @@ li, .link-image{
 
 
 @media screen and (max-width: 700px) {
+  .photo{
+    width: 100%;
+    }
+  .description{
+    width: 100%;
+  }
   .container{
     display: flex;
     flex-direction: row;

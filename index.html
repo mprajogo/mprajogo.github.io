@@ -11,16 +11,17 @@
   <body>
         <div class="header">
         <div class="menu">
-          <a href="#past-work" class="link">
-            <div class="title">WORK</div>
-            <div class="bar"></div>
-          </a>
+          
           <a href="#projects" class="link">
             <div class="title">PROJECTS</div>
             <div class="bar"></div>
           </a>
           <a href="#case-studies" class="link">
             <div class="title">CASE STUDIES</div>
+            <div class="bar"></div>
+          </a>
+          <a href="#past-work" class="link">
+            <div class="title">WORK</div>
             <div class="bar"></div>
           </a>
         </div>
@@ -31,7 +32,7 @@
         
     
       <div class="column" id="header">
-        <h1>Hey there! I'm Michelle.</h1>
+        <h1 id="intro">Hey there! I'm Michelle.</h1>
         <p class="subline">
           I'm a front-end developer with a passion for building UX-focused
           solutions for web and mobile.
@@ -60,69 +61,7 @@
       </div>
 
       <hr>
-      <div id="past-work"></div>
-      <h2>WORK</h2>
-      <div class="row-projects">
-        <div class="card-work" style="width: 18rem">
-            <a href="" target="_blank"
-              ><img src="images/mentorcloud.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-work-body">
-              <h3 class="work-title">Customer Success Executive</h3>
-              <h4 class="work-dates">2021-Present</h4>
-              <br />
-              <p class="card-work-body">
-                A trivia quiz game application with a countdown timer, score
-                calculator and answer validation.
-              </p>
-              <a
-                href="https://mprajogo.github.io/quizApp/"
-                target="_blank"
-                class="btn-work"
-                >SAMPLE WORK</a>
-            </div>
-          </div>
-
-          <div class="card-work" style="width: 18rem">
-            <a href="" target="_blank"
-              ><img src="images/mondomentor.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-work-body">
-              <h3 class="work-title">Marketing Executive</h3>
-              <h4 class="work-dates">2021-Present</h4>
-              <br />
-              <p class="card-work-body">
-                A trivia quiz game application with a countdown timer, score
-                calculator and answer validation.
-              </p>
-              <a
-                href="https://mprajogo.github.io/quizApp/"
-                target="_blank"
-                class="btn-work"
-                >SAMPLE WORK</a>
-            </div>
-          </div>
-          <div class="card-work" style="width: 18rem">
-            <a href="" target="_blank"
-              ><img src="images/mondomentor.png" class="card-img-top" alt="..."
-            /></a>
-            <div class="card-work-body">
-              <h3 class="work-title">Customer Success Executive</h3>
-              <h4 class="work-dates">2021-Present</h4>
-              <br />
-              <p class="card-work-body">
-                A trivia quiz game application with a countdown timer, score
-                calculator and answer validation.
-              </p>
-              <a
-                href="https://mprajogo.github.io/quizApp/"
-                target="_blank"
-                class="btn-work"
-                >SAMPLE WORK</a>
-            </div>
-          </div>
-      </div>
-      <hr>
+      
       <div id="projects"></div>
       <h2>PROJECTS</h2>
       <div class="row-projects">
@@ -208,28 +147,72 @@
       <hr />
       <div id="case-studies"></div>
       <h2>CASE STUDIES</h2>
+      <div class="row-projects">
+        <div class="card-work" style="width: 24rem">
+            <img src="images/arnotts-case-img.png" class="card-img-top" alt="..."
+            />
+            <div class="card-work-body">
+              <h3 class="work-title">Arnott's Nibbles</h3>
+              <h4 class="work-dates">UNIVERSITY CAPSTONE</h4>
+              <br />
+              <p class="card-work-body">
+                A research-driven NPD proposal designed in response to changing
+            consumer trends in the competitive macro-snacking market.
+              </p>
+              <a
+                href="/arnotts-case-study.html"
+                class="btn-work"
+                >VIEW CASE STUDY</a>
+            </div>
+          </div>
+
+          <div class="card-work" style="width: 24rem">
+            <img src="images/sugarcheck-case-img.png" class="card-img-top" alt="..."
+            />
+            <div class="card-work-body">
+              <h3 class="work-title">SugarCheck App</h3>
+              <h4 class="work-dates">HACKATHON SUBMISSION</h4>
+              <br />
+              <p class="card-work-body">
+                A trivia quiz game application with a countdown timer, score
+                calculator and answer validation.
+              </p>
+              <a
+                href="/sugarcheck-case-study.html"
+                class="btn-work"
+                >VIEW CASE STUDY</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+          <div id="past-work"></div>
+      <h2>WORK</h2>
+      
       <div class="row case-study">
+        <div class="column photo">
+            <img src="images/mentorcloud-img.png" alt="" class="case-study-img" />
+          </div>
         <div class="column description">
-          <h3>Arnott's Nibbles</h3>
-          <h4>UNIVERSITY CAPSTONE</h4>
+          <h3>Customer Success Executive</h3>
+          <h4>2021-Present</h4>
           <br />
           <p>
-            A research-driven NPD proposal designed in response to changing
-            consumer trends in the competitive macro-snacking market.
+           As a part of the customer success team, 
           </p>
           <br />
           <a class="case-study-btn" href="/arnotts-case-study.html"
-            >VIEW CASE STUDY</a
+            >VIEW SAMPLE WORK</a
           >
         </div>
-        <div class="column photo">
-          <img src="images/case-study-1.png" alt="" class="case-study-img" />
-        </div>
+        <hr>
       </div>
       <div class="row case-study">
+        <div class="column photo">
+            <img src="images/mondomentor-img.png" alt="" class="case-study-img" />
+          </div>
         <div class="column description">
-          <h3>SugarCheck App</h3>
-          <h4>ADEA CASE COMPETITION</h4>
+          <h3>Marketing Executive</h3>
+          <h4>2020-2021</h4>
           <br />
           <p>
             A research-driven NPD proposal designed in response to changing
@@ -237,13 +220,13 @@
           </p>
           <br />
           <a class="case-study-btn" href="/sugarcheck-case-study.html"
-            >VIEW CASE STUDY</a
+            >VIEW SAMPLE WORK</a
           >
         </div>
-        <div class="column photo">
-          <img src="images/case-study-1.png" alt="" class="case-study-img" />
-        </div>
+        
       </div>
+    
+     
 
     </div>
     <script src="index.js"></script>
