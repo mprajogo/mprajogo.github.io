@@ -70,7 +70,7 @@ h3{
   color: rgb(47, 83, 44);
   font-family: Garamond, serif; 
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h4{
@@ -87,7 +87,7 @@ p{
   font-weight: 300;
   font-style: light;
   font-size: 1.2em;
-  color: rgba(95, 86, 86, 0.795);
+  color: rgba(48, 44, 44, 0.795);
 }
 
 .subline{
@@ -290,18 +290,26 @@ hr{
   border: none;
 }
 
-ul, .links{
+.links{
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-li, .link-image{
+.link-list, .link-image{
   display: inline;
   width: 45px;
   padding-right: 5px;
 }
 
+ul, li{
+  font-family: prenton, sans-serif;
+  font-weight: 300;
+  font-style: light;
+  font-size: 1.1em;
+  color: rgba(48, 44, 44, 0.795);
+  margin-left: 10px;
+}
 
 .tooltip .tooltiptext{
   font-family: prenton, sans-serif;
@@ -414,8 +422,11 @@ li, .link-image{
 
 
 @media screen and (max-width: 700px) {
+  .description-image{
+    min-width: 90%;
+  }
   .photo{
-    width: 100%;
+    width: 40%;
     }
   .description{
     width: 100%;
@@ -544,6 +555,7 @@ li, .link-image{
 
 .case-study-description{
   padding: 50px;
+  margin-bottom: 50px;
   max-width: 70%;
   border-left: 1.5px solid rgb(47, 83, 44);
 }
@@ -574,7 +586,7 @@ li, .link-image{
 }
 
 .text{
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .description-image{
@@ -603,6 +615,7 @@ li, .link-image{
     position: fixed;
     bottom: 0;
     padding: 20px;
+    padding-left: 0;
     border-top: 1.5px solid rgb(47, 83, 44);
     border-bottom: 2px solid rgb(47, 83, 44);
   }
